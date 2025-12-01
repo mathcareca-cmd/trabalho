@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquitetura - Praça Sergio Pacheco</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/galeria.css">
+
+    <!-- Caminhos corrigidos para Vercel -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/galeria.css">
 </head>
+
 <body>
     <main class="conteudo-pagina">
         <h1>Projetos de Arquitetura</h1>
         <p class="descricao">Conheça os projetos arquitetônicos da Praça Sergio Pacheco em Uberlândia</p>
         
         <div class="galeria">
-            <!-- Carrossel com múltiplas imagens por projeto usando data-images -->
+
+            <!-- ITEM 1 -->
             <div class="galeria-item">
                 <div class="carousel" data-images='["/images/labirinto.jpg"]'>
                     <img src="/images/labirinto.jpg" alt="Labirinto Verde" class="carousel-image">
@@ -23,12 +27,14 @@
                         <span class="indicator active" onclick="goToImage(this, 0)"></span>
                     </div>
                 </div>
+
                 <div class="galeria-info">
                     <h4>Labirinto Verde</h4>
                     <p>Estrutura moderna com caminhos labirínticos</p>
                 </div>
             </div>
 
+            <!-- ITEM 2 -->
             <div class="galeria-item">
                 <div class="carousel" data-images='["/images/skates.jpg"]'>
                     <img src="/images/skates.jpg" alt="Pista de Skate" class="carousel-image">
@@ -38,27 +44,31 @@
                         <span class="indicator active" onclick="goToImage(this, 0)"></span>
                     </div>
                 </div>
+
                 <div class="galeria-info">
                     <h4>Pista de Skate</h4>
                     <p>Área moderna para prática de esportes radicais</p>
                 </div>
             </div>
 
+            <!-- ITEM 3 -->
             <div class="galeria-item">
-                <div class="carousel" data-images='["/images/exposi-c3-a7-c3-a3o.jpg"]'>
-                    <img src="/images/exposi-c3-a7-c3-a3o.jpg" alt="Área de Exposição" class="carousel-image">
+                <div class="carousel" data-images='["/images/exposicao.jpg"]'>
+                    <img src="/images/exposicao.jpg" alt="Área de Exposição" class="carousel-image">
                     <button class="carousel-btn prev" onclick="changeImage(this, -1)">❮</button>
                     <button class="carousel-btn next" onclick="changeImage(this, 1)">❯</button>
                     <div class="carousel-indicators">
                         <span class="indicator active" onclick="goToImage(this, 0)"></span>
                     </div>
                 </div>
+
                 <div class="galeria-info">
                     <h4>Área de Exposição</h4>
                     <p>Espaço para eventos e exposições ao ar livre</p>
                 </div>
             </div>
 
+            <!-- ITEM 4 -->
             <div class="galeria-item">
                 <div class="carousel" data-images='["/images/chafariz-pavilhao.jpg"]'>
                     <img src="/images/chafariz-pavilhao.jpg" alt="Chafariz e Pavilhão" class="carousel-image">
@@ -68,12 +78,14 @@
                         <span class="indicator active" onclick="goToImage(this, 0)"></span>
                     </div>
                 </div>
+
                 <div class="galeria-info">
                     <h4>Chafariz e Pavilhão</h4>
                     <p>Estrutura de convivência com fontes decorativas</p>
                 </div>
             </div>
 
+            <!-- ITEM 5 -->
             <div class="galeria-item">
                 <div class="carousel" data-images='["/images/teatro.jpg"]'>
                     <img src="/images/teatro.jpg" alt="Anfiteatro" class="carousel-image">
@@ -83,12 +95,14 @@
                         <span class="indicator active" onclick="goToImage(this, 0)"></span>
                     </div>
                 </div>
+
                 <div class="galeria-info">
                     <h4>Anfiteatro</h4>
                     <p>Espaço para apresentações culturais ao ar livre</p>
                 </div>
             </div>
 
+            <!-- ITEM 6 -->
             <div class="galeria-item">
                 <div class="carousel" data-images='["/images/quadras.jpg"]'>
                     <img src="/images/quadras.jpg" alt="Quadras Esportivas" class="carousel-image">
@@ -98,12 +112,14 @@
                         <span class="indicator active" onclick="goToImage(this, 0)"></span>
                     </div>
                 </div>
+
                 <div class="galeria-info">
                     <h4>Quadras Esportivas</h4>
                     <p>Quadras de voleibol e futsal modernas</p>
                 </div>
             </div>
 
+            <!-- ITEM 7 -->
             <div class="galeria-item">
                 <div class="carousel" data-images='["/images/passarela.jpg"]'>
                     <img src="/images/passarela.jpg" alt="Passarela Contemporânea" class="carousel-image">
@@ -113,11 +129,13 @@
                         <span class="indicator active" onclick="goToImage(this, 0)"></span>
                     </div>
                 </div>
+
                 <div class="galeria-info">
                     <h4>Passarela Contemporânea</h4>
                     <p>Estrutura arquitetônica inovadora e sustentável</p>
                 </div>
             </div>
+
         </div>
     </main>
 
@@ -143,6 +161,7 @@
         }
     </style>
 
-    <script src="../js/carousel.js"></script>
+    <!-- Caminho do JS corrigido -->
+    <script src="/js/carousel.js"></script>
 </body>
 </html>
