@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquitetura & Engenharia Mecânica</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- Caminhos corretos para Vercel -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 </head>
+
 <body>
+
     <!-- NAVBAR -->
     <nav>
-        <div class="container">
-            <a href="#home" class="logo" onclick="loadHome()">AE Studio</a>
-            <ul class="nav-links">
-                <!-- Links agora chamam função loadPage para carregar conteúdo dinâmico -->
-                <li><a href="javascript:void(0)" onclick="loadPage('pages/arquitetura.html')">Arquitetura</a></li>
-                <li><a href="javascript:void(0)" onclick="loadPage('pages/engenharia-mecanica.html')">Engenharia Mecânica</a></li>
-                <li><a href="javascript:void(0)" onclick="loadPage('pages/feedback.html')">Feedback</a></li>
-                <li><a href="javascript:void(0)" onclick="loadPage('pages/localizacao.html')">Localização</a></li>
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" onclick="loadHome()">AE Studio</a>
+
+            <ul class="nav-menu">
+                <li><a href="javascript:void(0)" onclick="loadPage('/pages/arquitetura.html')">Arquitetura</a></li>
+                <li><a href="javascript:void(0)" onclick="loadPage('/pages/engenharia-mecanica.html')">Engenharia Mecânica</a></li>
+                <li><a href="javascript:void(0)" onclick="loadPage('/pages/feedback.html')">Feedback</a></li>
+                <li><a href="javascript:void(0)" onclick="loadPage('/pages/localizacao.html')">Localização</a></li>
             </ul>
-            <div class="hamburger" onclick="toggleMenu()">
+
+            <div class="nav-hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -28,14 +33,14 @@
     </nav>
 
     <!-- HERO -->
-    <section id="home" class="hero">
+    <section id="home" class="home-hero">
         <h1>Arquitetura & Engenharia Mecânica</h1>
         <p>Soluções inovadoras para seus projetos</p>
     </section>
 
-    <!-- Container dinâmico que carrega conteúdo das páginas -->
+    <!-- CONTEÚDO DINÂMICO -->
     <main id="content">
-        <!-- Conteúdo será carregado aqui dinamicamente -->
+        <!-- As páginas externas serão carregadas aqui via script.js -->
     </main>
 
     <!-- FOOTER -->
@@ -44,6 +49,7 @@
         <p>Todos os direitos reservados.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Caminho corrigido -->
+    <script src="/js/script.js"></script>
 </body>
 </html>
